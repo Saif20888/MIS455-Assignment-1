@@ -1,0 +1,91 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: lightgoldenrodyellow;
+  color: black;
+  margin: 20px;
+}
+
+/* Navbar styling */
+/* Styling the nav bar container */
+nav {
+  background-color: gold;    /* Background color for the nav bar */
+  padding: 15px;             /* Padding inside the nav bar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow to give depth */
+}
+
+/* Styling the unordered list in the nav bar */
+nav ul {
+  list-style-type: none;     /* Removes the default bullet points */
+  margin: 0;                 /* Removes default margin */
+  padding: 0;                /* Removes default padding */
+  display: flex;             /* Ensures the list items are displayed horizontally */
+  justify-content: center;   /* Centers the items in the nav bar */
+}
+
+/* Styling each list item */
+nav ul li {
+  margin-right: 20px;        /* Space between each menu item */
+}
+
+nav ul li:last-child {
+  margin-right: 0;           /* Remove right margin from last item */
+}
+
+/* Styling the links inside the list items */
+nav ul li a {
+  color: black;              /* Text color for the links */
+  text-decoration: burlywood;     /* Removes underline from links */
+  font-size: 18px;           /* Font size for the links */
+  font-family: 'Roboto', sans-serif; /* Google font for the nav links */
+  padding: 10px 15px;        /* Adds padding around the link text */
+  border-radius: 5px;        /* Rounds the corners of the links */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styling for hover and active state */
+nav ul li a:hover {
+  background-color: whitesmoke;    /* Changes background color on hover */
+}
+
+nav ul li a:active {
+  background-color: #eaeaee;    /* Changes background color when the link is clicked */
+}
+
+
+/* Example of using flexbox */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container img {
+  width: 30%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* Example of using grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Style to ensure all images are the same size */
+img {
+  width: 800px;   /* Set a fixed width */
+  height: 500px;  /* Set a fixed height */
+  object-fit: cover;  /* Ensures the image maintains aspect ratio and covers the area */
+  margin: 20px 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);  /* Optional shadow for a cleaner look */
+}
